@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="header">
+    <a href="index.php" class="nav-link">Today</a>
+    <a href="forecast.php" class="nav-link">Forecast</a>
+    <a href="maps.php" class="nav-link">Maps</a>
+    <a href="alerts.php" class="nav-link">Alerts</a>
+  </nav>
+</body>
+</html>
