@@ -1,6 +1,10 @@
 :root {
   /* search color*/
   --color: rgb(121, 121, 121);
+  --background: rgb(19, 19, 19);
+  --title-color: rgb(218, 218, 218);
+  --text-color: rgb(215, 215, 215);
+  --nav-color: rgb(79, 234, 245);
 }
 
 * {
@@ -12,14 +16,19 @@
 html {
   scroll-behavior: smooth;
   font-family: roboto, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 15px 50px;
+  width: 100%;
   background: linear-gradient(
     to right,
     rgb(37, 37, 37) 20%,
@@ -37,6 +46,25 @@ html {
 a {
   text-decoration: none;
   color: rgb(251, 251, 251);
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -6px;
+  background-color: var(--nav-color);
+  height: 2.2px;
+  width: 0px;
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover:after {
+  width: 122%;
+}
+.nav-link.active:after {
+  width: 122%;
 }
 
 .weather {
@@ -60,7 +88,7 @@ a {
 
 .text h2 {
   font-size: 21px;
-  color: rgb(79, 234, 245);
+  color: var(--nav-color);
 }
 
 .search-bar {
@@ -120,4 +148,14 @@ a {
 #options li:hover {
   background: #333;
   border-radius: 8px;
+}
+
+.main-body {
+  margin-top: 80px;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.main-body h2 {
+  color: var(--title-color);
 }

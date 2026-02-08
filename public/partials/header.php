@@ -21,10 +21,10 @@
       </div>
     </div>
     <nav class="header">
-      <a href="index.php" class="nav-link">Today</a>
-      <a href="forecast.php" class="nav-link">Forecast</a>
-      <a href="maps.php" class="nav-link">Maps</a>
-      <a href="alerts.php" class="nav-link">Alerts</a>
+      <a href="index.php" class="nav-link <?= ($page === "today") ? 'active':'' ?> ">Today</a>
+      <a href="forecast.php" class="nav-link <?= ($page === "forecast") ? 'active':'' ?>">Forecast</a>
+      <a href="maps.php" class="nav-link <?= ($page ==="maps") ? 'active' :'' ?>">Maps</a>
+      <a href="alerts.php" class="nav-link <?= ($page === "alerts") ? 'active':'' ?>">Alerts</a>
     </nav>
     <div class="search-bar">
       <i id="btnSearch" class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -33,6 +33,6 @@
     </div>
   </div>
 
-  <script src="./../assets/js/main.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
 </html> 
