@@ -36,6 +36,7 @@ input.addEventListener("input", () => {
 
 btnSearch.addEventListener("click", verifyCity);
 
+// verify city
 function verifyCity() {
   const value = input.value;
 
@@ -47,6 +48,7 @@ function verifyCity() {
   options.style.display = "none";
 }
 
+// Change the language
 document.addEventListener("DOMContentLoaded", () => {
   const langSwitch = document.getElementById("lang_switch");
 

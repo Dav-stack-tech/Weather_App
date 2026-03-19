@@ -1,10 +1,12 @@
 :root {
   /* search color*/
   --color: rgb(121, 121, 121);
-  --background: rgb(19, 19, 19);
+  --background: rgb(29, 29, 31);
   --title-color: rgb(218, 218, 218);
   --text-color: rgb(215, 215, 215);
   --nav-color: rgb(79, 234, 245);
+  --container: rgba(255, 255, 255, 0.098);
+  --thick-color: rgba(102, 132, 168, 0.404);
 }
 
 * {
@@ -168,9 +170,11 @@ select,
 }
 
 #options li:hover {
-  background: #b2b2b2;
+  background: #d8d8d8;
   border-radius: 8px;
 }
+
+/* index.php */
 
 .main-body {
   margin-top: 80px;
@@ -181,3 +185,54 @@ select,
 .main-body h2 {
   color: var(--title-color);
 }
+
+.today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.today .main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.main-1,
+.main-2,
+.auxi-1,
+.auxi-2 {
+  background-color: var(--container);
+  margin: 0 auto;
+  border: 1.2px solid var(--thick-color);
+}
+.today .main-1 {
+  border-radius: 20px;
+  padding: 130px 250px;
+}
+
+.today .main-2 {
+  border-radius: 15px;
+  padding: 130px 120px;
+}
+
+.today .auxi {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.today .auxi-1 {
+  border-radius: 15px;
+  padding: 100px 260px;
+}
+
+.today .auxi-2 {
+  border-radius: 15px;
+  padding: 100px 200px;
+}
+
+/* forecast.php */
