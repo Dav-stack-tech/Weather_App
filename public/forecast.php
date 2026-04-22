@@ -29,6 +29,7 @@ require_once "partials/header.php";
   
   <footer>
     <?php require_once 'partials/footer.html'?>
+    ©
   </footer>
 </body>
 </html>
